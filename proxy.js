@@ -4,7 +4,7 @@ const fs    = require('fs')
     , url   = require('url')
     , after = require('after')
 
-function loadKey (config, file, dir, callback) {
+function loadKey (config, file, callback) {
   if (!config.tls || typeof config.tls[file + 'File'] != 'string')
     return callback()
 
