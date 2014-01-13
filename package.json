@@ -1,0 +1,30 @@
+{
+  "name": "kappa-bridge",
+  "version": "0.0.0",
+  "description": "An bridge for certificate-authenticated npm connections to Kappa registries",
+  "main": "kappa-bridge.js",
+  "keywords": [
+    "npm",
+    "kappa"
+  ],
+  "bin": {
+    "kappa-bridge": "./kappa-bridge.js"
+  },
+  "global": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rvagg/kappa-bridge.git"
+  },
+  "author": "Rod Vagg <rod@vagg.org> (https://github.com/rvagg)",
+  "license": "MIT +no-false-attribs ",
+  "peerDependencies": {
+    "hapi": "~2.x.x"
+  },
+  "devDependencies": {
+    "hapi": "~2.x.x"
+  },
+  "dependencies": {
+    "optimist": "~0.6.0",
+    "after": "~0.8.1"
+  }
+}
