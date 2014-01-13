@@ -1,13 +1,16 @@
 const fs    = require('fs')
+    , path  = require('path')
     , Hapi  = require('hapi')
     , url   = require('url')
     , after = require('after')
 
-function loadKey (config, file, callback) {
+function loadKey (config, file, dir, callback) {
   if (!config.tls || typeof config.tls[file + 'File'] != 'string')
     return callback()
 
-  fs.readFile(config.tls[file + 'File'], 'utf8', function (err, data) {
+  var _file = path.join(config.configDir || '.', config.tls[file + 'File'])
+
+  fs.readFile(_file, 'utf8', function (err, data) {
     if (err)
       return callback(err)
 

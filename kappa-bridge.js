@@ -8,6 +8,7 @@ var config
 
 if (argv.c) {
   config = require(path.resolve(argv.c))
+  config.configDir = path.dirname(argv.c)
 } else {
   config = { kappa: { tls: {} }, registry: { tls: {} } }
 
