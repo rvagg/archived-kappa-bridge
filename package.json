@@ -1,7 +1,7 @@
 {
   "name": "kappa-bridge",
   "version": "0.0.4",
-  "description": "An bridge for certificate-authenticated npm connections to Kappa registries",
+  "description": "A bridge for certificate-authenticated npm connections to Kappa registries",
   "main": "kappa-bridge.js",
   "keywords": [
     "npm",
