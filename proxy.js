@@ -23,6 +23,8 @@ function loadTls (config, callback) {
   var done = after(4, callback)
 
   function loadFor (type) {
+    config[type].configDir = config.configDir
+
     if (config[type].tls
         && typeof config[type].tls.keyFile == 'string'
         && typeof config[type].tls.key != 'string')
