@@ -16,15 +16,10 @@
     "url": "https://github.com/rvagg/kappa-bridge.git"
   },
   "author": "Rod Vagg <rod@vagg.org> (https://github.com/rvagg)",
-  "license": "MIT +no-false-attribs ",
-  "peerDependencies": {
-    "hapi": "~2.x.x"
-  },
-  "devDependencies": {
-    "hapi": "~2.x.x"
-  },
+  "license": "MIT +no-false-attribs",
   "dependencies": {
     "optimist": "~0.6.0",
-    "after": "~0.8.1"
+    "after": "~0.8.1",
+    "hapi": "~2.0.0-preview"
   }
 }
